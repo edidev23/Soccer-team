@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Soccer Team</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location">Jakarta, Indonesia</string>
+    <string name="name">Arsenal FC</string>
+    <string name="image_description">Image description</string>
+</resources>
