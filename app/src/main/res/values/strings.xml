@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">Soccer Team</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="location">Jakarta, Indonesia</string>
     <string name="name">Arsenal FC</string>
     <string name="image_description">Image description</string>
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="navigation_drawer_open">Menu Open</string>
+    <string name="navigation_drawer_close">Menu Close</string>
 </resources>

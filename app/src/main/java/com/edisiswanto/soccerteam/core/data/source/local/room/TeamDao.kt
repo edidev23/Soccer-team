@@ -14,7 +14,7 @@ interface TeamDao {
     fun getFavoriteTeam(): Flow<List<TeamSoccerEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertTeam(team: List<TeamSoccerEntity>)
+    suspend fun insertTeam(teamList: List<TeamSoccerEntity>)
 
     @Update
     fun updateFavoriteTeam(team: TeamSoccerEntity)

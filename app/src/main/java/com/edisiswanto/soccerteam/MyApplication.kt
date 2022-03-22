@@ -5,6 +5,7 @@ import com.edisiswanto.soccerteam.core.di.databaseModule
 import com.edisiswanto.soccerteam.core.di.networkModule
 import com.edisiswanto.soccerteam.core.di.repositoryModule
 import com.edisiswanto.soccerteam.di.useCaseModule
+import com.edisiswanto.soccerteam.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -22,6 +23,7 @@ class MyApplication : Application() {
                     networkModule,
                     repositoryModule,
                     useCaseModule,
+                    viewModelModule
                 )
             )
         }

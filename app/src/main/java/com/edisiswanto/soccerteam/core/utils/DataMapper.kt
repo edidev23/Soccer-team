@@ -10,8 +10,8 @@ object DataMapper {
         input.map {
             val team = TeamSoccerEntity(
                 idTeam = it.idTeam,
-                name = it.description,
-                league = it.name,
+                name = it.name,
+                league = it.league,
                 sport = it.sport,
                 country = it.country,
                 description = it.description,
@@ -30,8 +30,8 @@ object DataMapper {
         input.map {
             TeamSoccer(
                 idTeam = it.idTeam,
-                name = it.description,
-                league = it.name,
+                name = it.name,
+                league = it.league,
                 sport = it.sport,
                 country = it.country,
                 description = it.description,
@@ -45,8 +45,8 @@ object DataMapper {
 
     fun mapDomainToEntity(input: TeamSoccer) = TeamSoccerEntity(
         idTeam = input.idTeam,
-        name = input.description,
-        league = input.name,
+        name = input.name,
+        league = input.league,
         sport = input.sport,
         country = input.country,
         description = input.description,
