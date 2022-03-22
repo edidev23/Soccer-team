@@ -39,7 +39,7 @@ object DataMapper {
                 teamJersey = it.teamJersey,
                 teamLogo = it.teamLogo,
                 teamBanner = it.teamBanner,
-                isFavorite = false
+                isFavorite = it.isFavorite
             )
         }
 
@@ -54,6 +54,6 @@ object DataMapper {
         teamJersey = input.teamJersey,
         teamLogo = input.teamLogo,
         teamBanner = input.teamBanner,
-        isFavorite = false
+        isFavorite = input.isFavorite
     )
 }

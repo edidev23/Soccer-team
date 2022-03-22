@@ -10,4 +10,5 @@
     <string name="menu_favorite">Favorite</string>
     <string name="navigation_drawer_open">Menu Open</string>
     <string name="navigation_drawer_close">Menu Close</string>
+    <string name="text_description">text description</string>
 </resources>

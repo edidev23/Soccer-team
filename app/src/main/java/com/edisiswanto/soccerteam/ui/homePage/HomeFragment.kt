@@ -2,6 +2,7 @@ package com.edisiswanto.soccerteam.ui.homePage
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -34,8 +35,8 @@ class HomeFragment : Fragment() {
 
         if (activity != null) {
 
-            val tourismAdapter = TeamAdapter()
-            tourismAdapter.onItemClick = { selectedData ->
+            val teamAdapter = TeamAdapter()
+            teamAdapter.onItemClick = { selectedData ->
                 val intent = Intent(activity, DetailTeamActivity::class.java)
                 intent.putExtra(DetailTeamActivity.EXTRA_DATA, selectedData)
                 startActivity(intent)
@@ -47,7 +48,7 @@ class HomeFragment : Fragment() {
                         is Resource.Loading -> binding.progressBar.visibility = View.VISIBLE
                         is Resource.Success -> {
                             binding.progressBar.visibility = View.GONE
-                            tourismAdapter.setData(team.data)
+                            teamAdapter.setData(team.data)
                         }
                         is Resource.Error -> {
                             binding.progressBar.visibility = View.GONE
@@ -61,7 +62,7 @@ class HomeFragment : Fragment() {
             with(binding.rvSoccerTeam) {
                 layoutManager = LinearLayoutManager(context)
                 setHasFixedSize(true)
-                adapter = tourismAdapter
+                adapter = teamAdapter
             }
         }
     }
