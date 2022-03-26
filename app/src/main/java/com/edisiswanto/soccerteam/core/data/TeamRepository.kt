@@ -17,20 +17,6 @@ class TeamRepository(
     private val appExecutors: AppExecutors
 ) : ITeamRepository {
 
-    companion object {
-        @Volatile
-        private var instance: TeamRepository? = null
-
-        fun getInstance(
-            remoteData: RemoteDataSource,
-            localData: LocalDataSource,
-            appExecutors: AppExecutors
-        ): TeamRepository =
-            instance ?: synchronized(this) {
-                instance ?: TeamRepository(remoteData, localData, appExecutors)
-            }
-    }
-
     override fun getAllTeam(): Flow<Resource<List<TeamSoccer>>> =
         object : NetworkBoundResource<List<TeamSoccer>, List<TeamSoccerResponse>>() {
             override fun loadFromDB(): Flow<List<TeamSoccer>> {
