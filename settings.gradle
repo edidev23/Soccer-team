@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Soccer Team"
 include ':app'
+include ':core'

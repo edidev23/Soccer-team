@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.edisiswanto.soccerteam.R
-import com.edisiswanto.soccerteam.core.domain.model.TeamSoccer
+import com.edisiswanto.core.domain.model.TeamSoccer
 import com.edisiswanto.soccerteam.databinding.ActivityDetailTeamBinding
 import org.koin.android.viewmodel.ext.android.viewModel
 

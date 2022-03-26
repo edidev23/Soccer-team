@@ -2,14 +2,12 @@ package com.edisiswanto.soccerteam.ui.favoritePage
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.edisiswanto.soccerteam.R
-import com.edisiswanto.soccerteam.core.ui.TeamAdapter
+import com.edisiswanto.soccerteam.ui.adapter.TeamAdapter
 import com.edisiswanto.soccerteam.databinding.FragmentFavoriteBinding
 import com.edisiswanto.soccerteam.ui.detailPage.DetailTeamActivity
 import org.koin.android.viewmodel.ext.android.viewModel
