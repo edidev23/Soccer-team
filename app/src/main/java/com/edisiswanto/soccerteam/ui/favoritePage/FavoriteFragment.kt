@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.edisiswanto.soccerteam.ui.adapter.TeamAdapter
+import com.edisiswanto.core.ui.TeamAdapter
 import com.edisiswanto.soccerteam.databinding.FragmentFavoriteBinding
 import com.edisiswanto.soccerteam.ui.detailPage.DetailTeamActivity
 import org.koin.android.viewmodel.ext.android.viewModel

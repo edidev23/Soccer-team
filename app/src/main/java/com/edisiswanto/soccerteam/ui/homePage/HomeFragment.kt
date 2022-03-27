@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.edisiswanto.soccerteam.R
 import com.edisiswanto.core.data.Resource
-import com.edisiswanto.soccerteam.ui.adapter.TeamAdapter
+import com.edisiswanto.core.ui.TeamAdapter
 import com.edisiswanto.soccerteam.databinding.FragmentHomeBinding
 import com.edisiswanto.soccerteam.ui.detailPage.DetailTeamActivity
 import org.koin.android.viewmodel.ext.android.viewModel

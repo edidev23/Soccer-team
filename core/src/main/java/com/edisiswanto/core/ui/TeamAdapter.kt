@@ -1,13 +1,13 @@
-package com.edisiswanto.soccerteam.ui.adapter
+package com.edisiswanto.core.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.edisiswanto.soccerteam.R
+import com.edisiswanto.core.R
 import com.edisiswanto.core.domain.model.TeamSoccer
-import com.edisiswanto.soccerteam.databinding.ItemListTeamBinding
+import com.edisiswanto.core.databinding.ItemListTeamBinding
 import java.util.ArrayList
 
 class TeamAdapter: RecyclerView.Adapter<TeamAdapter.ListViewHolder>() {
