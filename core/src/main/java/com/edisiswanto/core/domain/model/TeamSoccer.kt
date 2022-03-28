@@ -16,5 +16,8 @@ data class TeamSoccer(
 	val teamJersey: String,
 	val teamLogo: String,
 	val teamBanner: String,
+	val stadium: String,
+	val stadiumThumb: String,
+	val stadiumLocation: String,
 	val isFavorite: Boolean
 ) : Parcelable

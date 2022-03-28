@@ -39,6 +39,15 @@ data class TeamSoccerEntity(
     @ColumnInfo(name = "teamBanner")
     var teamBanner: String,
 
+    @ColumnInfo(name = "stadium")
+    var stadium: String,
+
+    @ColumnInfo(name = "stadiumThumb")
+    var stadiumThumb: String,
+
+    @ColumnInfo(name = "stadiumLocation")
+    var stadiumLocation: String,
+
     @ColumnInfo(name = "isFavorite")
     var isFavorite: Boolean = false
 )

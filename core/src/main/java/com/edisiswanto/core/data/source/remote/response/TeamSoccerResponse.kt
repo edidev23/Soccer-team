@@ -32,6 +32,17 @@ data class TeamSoccerResponse(
     val teamLogo: String,
 
     @field:SerializedName("strTeamBanner")
-    val teamBanner: String
+    val teamBanner: String,
+
+    @field:SerializedName("strStadium")
+    val stadium: String,
+
+    @field:SerializedName("strStadiumThumb")
+    val stadiumThumb: String,
+
+    @field:SerializedName("strStadiumLocation")
+    val stadiumLocation: String
+
+
 
 )

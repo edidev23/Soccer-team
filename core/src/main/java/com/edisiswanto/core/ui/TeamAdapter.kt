@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.edisiswanto.core.R
-import com.edisiswanto.core.domain.model.TeamSoccer
 import com.edisiswanto.core.databinding.ItemListTeamBinding
+import com.edisiswanto.core.domain.model.TeamSoccer
 import java.util.ArrayList
 
 class TeamAdapter: RecyclerView.Adapter<TeamAdapter.ListViewHolder>() {
@@ -39,10 +39,15 @@ class TeamAdapter: RecyclerView.Adapter<TeamAdapter.ListViewHolder>() {
         fun bind(data: TeamSoccer) {
             with(binding) {
                 Glide.with(itemView.context)
-                    .load(data.teamBadge)
+                    .load(data.stadiumThumb)
                     .into(ivItemImage)
+
+                Glide.with(itemView.context)
+                    .load(data.teamBadge)
+                    .centerCrop()
+                    .into(ivBadge)
                 tvItemName.text = data.name
-                tvItemLocation.text = data.country
+                tvItemLocation.text = data.stadiumLocation
             }
         }
 

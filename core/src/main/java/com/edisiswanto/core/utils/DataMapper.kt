@@ -19,6 +19,9 @@ object DataMapper {
                 teamJersey = it.teamJersey,
                 teamLogo = it.teamLogo,
                 teamBanner = it.teamBanner,
+                stadium = it.stadium,
+                stadiumThumb = it.stadiumThumb,
+                stadiumLocation = it.stadiumLocation,
                 isFavorite = false
             )
             teamList.add(team)
@@ -39,6 +42,9 @@ object DataMapper {
                 teamJersey = it.teamJersey,
                 teamLogo = it.teamLogo,
                 teamBanner = it.teamBanner,
+                stadium = it.stadium,
+                stadiumThumb = it.stadiumThumb,
+                stadiumLocation = it.stadiumLocation,
                 isFavorite = it.isFavorite
             )
         }
@@ -54,6 +60,9 @@ object DataMapper {
         teamJersey = input.teamJersey,
         teamLogo = input.teamLogo,
         teamBanner = input.teamBanner,
+        stadium = input.stadium,
+        stadiumThumb = input.stadiumThumb,
+        stadiumLocation = input.stadiumLocation,
         isFavorite = input.isFavorite
     )
 }
