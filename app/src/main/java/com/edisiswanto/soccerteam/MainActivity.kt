@@ -1,13 +1,15 @@
 package com.edisiswanto.soccerteam
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+//import com.edisiswanto.soccerteam.ui.favoritePage.FavoriteFragment
 import com.edisiswanto.soccerteam.databinding.ActivityMainBinding
-import com.edisiswanto.soccerteam.ui.favoritePage.FavoriteFragment
 import com.edisiswanto.soccerteam.ui.homePage.HomeFragment
 import com.google.android.material.navigation.NavigationView
 
@@ -51,7 +53,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 title = getString(R.string.app_name)
             }
             R.id.nav_favorite -> {
-                fragment = FavoriteFragment()
+//                val uri = Uri.parse("soccerteam://favorite")
+//                startActivity(Intent(Intent.ACTION_VIEW, uri))
+
                 title = getString(R.string.menu_favorite)
             }
            // jika tambah menu baru

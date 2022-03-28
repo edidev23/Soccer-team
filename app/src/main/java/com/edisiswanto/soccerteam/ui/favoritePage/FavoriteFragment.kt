@@ -11,6 +11,7 @@ import com.edisiswanto.core.ui.TeamAdapter
 import com.edisiswanto.soccerteam.databinding.FragmentFavoriteBinding
 import com.edisiswanto.soccerteam.ui.detailPage.DetailTeamActivity
 import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.core.context.loadKoinModules
 
 class FavoriteFragment : Fragment() {
 
@@ -29,6 +30,8 @@ class FavoriteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+//        loadKoinModules(favoriteModule)
 
         if (activity != null) {
 

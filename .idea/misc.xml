@@ -18,6 +18,8 @@
         <entry key="app/src/main/res/layout/view_error.xml" value="0.1" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.11388888888888889" />
         <entry key="core/src/main/res/layout/item_list_team.xml" value="0.1" />
+        <entry key="favorite/src/main/res/layout/activity_favorite.xml" value="0.12907608695652173" />
+        <entry key="favorite/src/main/res/layout/favorite_view_empty.xml" value="0.12907608695652173" />
       </map>
     </option>
   </component>
