@@ -1,9 +1,9 @@
-package com.edisiswanto.soccerteam.ui.favoritePage
+package com.edisiswanto.soccerteam.favorite.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.edisiswanto.core.domain.usecase.TeamUseCase
 
-class FavoriteViewModel(teamUseCase: TeamUseCase) : ViewModel() {
+class FavoriteViewModel (teamUseCase: TeamUseCase) : ViewModel() {
     val favoriteTeam = teamUseCase.getFavoriteTeam().asLiveData()
 }

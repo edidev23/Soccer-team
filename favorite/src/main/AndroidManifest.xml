@@ -14,13 +14,14 @@
     </dist:module>
 
     <application>
-        <activity android:name=".ui.FavoriteActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW"/>-->
-<!--                <category android:name="android.intent.category.DEFAULT"/>-->
-<!--                <data android:scheme="soccerteam"-->
-<!--                    android:host="favorite"/>-->
-<!--            </intent-filter>-->
+        <activity android:name=".ui.FavoriteActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="soccerteam"
+                    android:host="favorite"/>
+            </intent-filter>
         </activity>
     </application>
 
