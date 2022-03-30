@@ -28,9 +28,27 @@ class DetailTeamActivity : AppCompatActivity() {
         detailTeam?.let {
             supportActionBar?.title = detailTeam.name
             binding.content.tvDetailDescription.text = detailTeam.description
+            binding.content.title.text = detailTeam.stadium
+            binding.content.location.text = detailTeam.stadiumLocation
+            binding.content.tvLeague1.text = detailTeam.league
+            binding.content.tvLeague2.text = detailTeam.league2
+            binding.content.tvLeague3.text = detailTeam.league3
+
             Glide.with(this@DetailTeamActivity)
-                .load(detailTeam.teamBanner)
+                .load(detailTeam.stadiumThumb)
                 .into(binding.ivDetailImage)
+
+            Glide.with(this@DetailTeamActivity)
+                .load(detailTeam.teamBadge)
+                .into(binding.content.ivBadge)
+
+            Glide.with(this@DetailTeamActivity)
+                .load(detailTeam.teamJersey)
+                .into(binding.content.ivJersey)
+
+            Glide.with(this@DetailTeamActivity)
+                .load(detailTeam.teamLogo)
+                .into(binding.content.ivLogo)
 
             var statusFavorite = detailTeam.isFavorite
             setStatusFavorite(statusFavorite)

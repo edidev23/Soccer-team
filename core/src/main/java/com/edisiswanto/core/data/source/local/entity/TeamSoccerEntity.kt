@@ -18,6 +18,12 @@ data class TeamSoccerEntity(
     @ColumnInfo(name = "league")
     var league: String,
 
+    @ColumnInfo(name = "league2")
+    var league2: String,
+
+    @ColumnInfo(name = "league3")
+    var league3: String,
+
     @ColumnInfo(name = "sport")
     var sport: String,
 

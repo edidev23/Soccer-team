@@ -9,6 +9,8 @@ data class TeamSoccer(
 	val idTeam: String,
 	val name: String,
 	val league: String,
+	val league2: String,
+	val league3: String,
 	val sport: String,
 	val country: String,
 	val description: String,

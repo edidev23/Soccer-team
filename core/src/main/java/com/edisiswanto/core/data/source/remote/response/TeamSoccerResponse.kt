@@ -13,6 +13,12 @@ data class TeamSoccerResponse(
     @field:SerializedName("strLeague")
     val league: String,
 
+    @field:SerializedName("strLeague2")
+    val league2: String,
+
+    @field:SerializedName("strLeague3")
+    val league3: String,
+
     @field:SerializedName("strSport")
     val sport: String,
 
