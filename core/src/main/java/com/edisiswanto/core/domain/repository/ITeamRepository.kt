@@ -12,4 +12,6 @@ interface ITeamRepository {
 
     fun setFavoriteTeam(team: TeamSoccer, state: Boolean)
 
+    fun searchTeam(title: String): Flow<List<TeamSoccer>>
+
 }

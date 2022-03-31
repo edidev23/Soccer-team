@@ -11,4 +11,6 @@ class TeamInteractor(private val teamRepository: ITeamRepository): TeamUseCase {
 
     override fun setFavoriteTeam(team: TeamSoccer, state: Boolean) = teamRepository.setFavoriteTeam(team, state)
 
+    override fun searchTeam(title: String) = teamRepository.searchTeam(title)
+
 }

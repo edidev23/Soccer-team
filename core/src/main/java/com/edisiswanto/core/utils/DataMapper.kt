@@ -53,6 +53,26 @@ object DataMapper {
             )
         }
 
+    fun mapEntitiesToDomainObject(input: TeamSoccerEntity): TeamSoccer =
+        TeamSoccer(
+            idTeam = input.idTeam,
+            name = input.name,
+            league = input.league,
+            league2 = input.league2,
+            league3 = input.league3,
+            sport = input.sport,
+            country = input.country,
+            description = input.description,
+            teamBadge = input.teamBadge,
+            teamJersey = input.teamJersey,
+            teamLogo = input.teamLogo,
+            teamBanner = input.teamBanner,
+            stadium = input.stadium,
+            stadiumThumb = input.stadiumThumb,
+            stadiumLocation = input.stadiumLocation,
+            isFavorite = input.isFavorite
+        )
+
     fun mapDomainToEntity(input: TeamSoccer) = TeamSoccerEntity(
         idTeam = input.idTeam,
         name = input.name,

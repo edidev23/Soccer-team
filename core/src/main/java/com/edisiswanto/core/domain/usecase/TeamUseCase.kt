@@ -8,4 +8,5 @@ interface TeamUseCase {
     fun getAllTeam(): Flow<Resource<List<TeamSoccer>>>
     fun getFavoriteTeam(): Flow<List<TeamSoccer>>
     fun setFavoriteTeam(team: TeamSoccer, state: Boolean)
+    fun searchTeam(title: String): Flow<List<TeamSoccer>>
 }

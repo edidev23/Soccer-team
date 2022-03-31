@@ -13,4 +13,8 @@
     <string name="text_description">text description</string>
     <string name="title_favorite">Favorite</string>
     <string name="arsenal">Arsenal</string>
+    <string name="search_team">Team Search</string>
+    <string name="nothing">Data Not Found!</string>
+    <string name="menu_search">Team Search</string>
+    <string name="team_name">Enter team name</string>
 </resources>

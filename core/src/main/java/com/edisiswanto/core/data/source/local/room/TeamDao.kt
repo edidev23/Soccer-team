@@ -18,4 +18,7 @@ interface TeamDao {
 
     @Update
     fun updateFavoriteTeam(team: TeamSoccerEntity)
+
+    @Query("SELECT * FROM team where name LIKE '%' || :title || '%'")
+    fun searchTeam(title: String): Flow<List<TeamSoccerEntity>>
 }

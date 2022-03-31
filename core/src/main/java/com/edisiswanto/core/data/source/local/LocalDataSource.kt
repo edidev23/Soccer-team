@@ -16,4 +16,6 @@ class LocalDataSource(private val teamDao: TeamDao) {
         team.isFavorite = newState
         teamDao.updateFavoriteTeam(team)
     }
+
+    fun searchTeam(title: String): Flow<List<TeamSoccerEntity>> = teamDao.searchTeam(title)
 }

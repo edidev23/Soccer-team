@@ -10,6 +10,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.edisiswanto.soccerteam.databinding.ActivityMainBinding
 import com.edisiswanto.soccerteam.ui.homePage.HomeFragment
+import com.edisiswanto.soccerteam.ui.searchPage.SearchFragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -51,11 +52,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 fragment = HomeFragment()
                 title = getString(R.string.app_name)
             }
-            R.id.nav_favorite -> {
-                startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
-                // title = getString(R.string.menu_favorite)
+            R.id.nav_search -> {
+                // startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
+                title = getString(R.string.menu_search)
+                fragment = SearchFragment()
             }
-           // jika tambah menu baru
         }
         if (fragment != null) {
             supportFragmentManager.beginTransaction()

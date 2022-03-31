@@ -10,6 +10,7 @@ import com.edisiswanto.core.utils.AppExecutors
 import com.edisiswanto.core.utils.DataMapper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlin.collections.mutableListOf as mutableListOf1
 
 class TeamRepository(
     private val remoteDataSource: RemoteDataSource,
@@ -43,5 +44,9 @@ class TeamRepository(
     override fun setFavoriteTeam(team: TeamSoccer, state: Boolean) {
         val teamEntity = DataMapper.mapDomainToEntity(team)
         appExecutors.diskIO().execute { localDataSource.setFavoriteTeam(teamEntity, state) }
+    }
+
+    override fun searchTeam(title: String): Flow<List<TeamSoccer>> {
+        return localDataSource.searchTeam(title).map { DataMapper.mapEntitiesToDomain(it) }
     }
 }
