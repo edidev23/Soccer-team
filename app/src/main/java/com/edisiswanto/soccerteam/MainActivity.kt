@@ -1,9 +1,9 @@
 package com.edisiswanto.soccerteam
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 title = getString(R.string.app_name)
             }
             R.id.nav_search -> {
-                // startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
                 title = getString(R.string.menu_search)
                 fragment = SearchFragment()
             }
@@ -67,5 +66,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.option_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu1 -> {
+                startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
+                return true
+            }
+            else -> return true
+        }
     }
 }
