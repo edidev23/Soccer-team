@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Soccer Team</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="location">Jakarta, Indonesia</string>
     <string name="name">Arsenal FC</string>
     <string name="image_description">Image description</string>
@@ -17,4 +16,9 @@
     <string name="nothing">Data Not Found!</string>
     <string name="menu_search">Team Search</string>
     <string name="team_name">Enter team name</string>
+    <string name="league">English Premier League</string>
+    <string name="contentDescription">konten gambar</string>
+    <string name="description">Description</string>
+    <string name="badge">Badge</string>
+    <string name="jersey">Jersey</string>
 </resources>

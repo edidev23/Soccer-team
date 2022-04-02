@@ -10,7 +10,6 @@ import com.edisiswanto.core.utils.AppExecutors
 import com.edisiswanto.core.utils.DataMapper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import kotlin.collections.mutableListOf as mutableListOf1
 
 class TeamRepository(
     private val remoteDataSource: RemoteDataSource,

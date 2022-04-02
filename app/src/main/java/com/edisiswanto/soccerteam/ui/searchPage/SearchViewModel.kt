@@ -1,6 +1,5 @@
 package com.edisiswanto.soccerteam.ui.searchPage
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.edisiswanto.core.domain.usecase.TeamUseCase

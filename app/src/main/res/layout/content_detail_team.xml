@@ -16,7 +16,8 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/soccer_field"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/contentDescription" />
 
     <TextView
         android:id="@+id/title"
@@ -47,7 +48,7 @@
         android:layout_margin="@dimen/text_margin"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
-        android:text="Description"
+        android:text="@string/description"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +76,8 @@
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detail_description"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_description"
+        android:contentDescription="@string/contentDescription" />
 
     <TextView
         android:id="@+id/tv_league_1"
@@ -86,7 +88,7 @@
         android:background="@drawable/rounded_corner_view"
         android:gravity="center"
         android:padding="8dp"
-        android:text="English Premier League"
+        android:text="@string/league"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_league_2"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
@@ -99,7 +101,7 @@
         android:padding="8dp"
         android:gravity="center"
         android:background="@drawable/rounded_corner_view"
-        android:text="English Premier League"
+        android:text="@string/league"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +116,7 @@
         android:background="@drawable/rounded_corner_view"
         android:gravity="center"
         android:padding="8dp"
-        android:text="English Premier League"
+        android:text="@string/league"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_league_2"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
@@ -146,13 +148,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/badge" />
+                android:src="@drawable/badge"
+                android:contentDescription="@string/badge" />
 
             <TextView
                 android:id="@+id/text_badge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Badge"
+                android:text="@string/badge"
                 android:padding="5dp"
                 android:textAlignment="center" />
         </LinearLayout>
@@ -171,13 +174,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/jersey" />
+                android:src="@drawable/jersey"
+                android:contentDescription="@string/jersey" />
 
             <TextView
                 android:id="@+id/text_jersey"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jersey"
+                android:text="@string/jersey"
                 android:padding="5dp"
                 android:textAlignment="center" />
         </LinearLayout>

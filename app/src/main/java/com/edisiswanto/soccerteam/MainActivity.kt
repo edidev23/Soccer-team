@@ -75,12 +75,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.menu1 -> {
                 startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
-                return true
+                true
             }
-            else -> return true
+            else -> true
         }
     }
 }

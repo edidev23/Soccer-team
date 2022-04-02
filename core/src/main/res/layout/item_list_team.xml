@@ -53,7 +53,8 @@
             android:layout_marginTop="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/iv_item_image"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="@+id/view"
+            android:contentDescription="@string/konten_deskripsi" />
 
         <TextView
             android:id="@+id/tv_item_name"

@@ -43,13 +43,6 @@ dependencies {
     implementation project(":core")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9"
-    implementation "androidx.activity:activity-ktx:1.1.0" //by viewModels()
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0" //lifecycleScope
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0" //asLiveData
 
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")

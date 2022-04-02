@@ -1,4 +1,4 @@
-package com.edisiswanto.soccerteam.core.di
+package com.edisiswanto.core.di
 
 import androidx.room.Room
 import com.edisiswanto.core.data.TeamRepository
