@@ -1,5 +1,6 @@
 package com.edisiswanto.core.ui
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ class TeamAdapter: RecyclerView.Adapter<TeamAdapter.ListViewHolder>() {
     private var listData = ArrayList<TeamSoccer>()
     var onItemClick: ((TeamSoccer) -> Unit)? = null
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(newListData: List<TeamSoccer>?) {
         if (newListData == null) return
         listData.clear()

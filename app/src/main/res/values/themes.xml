@@ -14,6 +14,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppThemeGray">
+        <item name="android:background">@color/gray</item>
+    </style>
+
     <style name="Theme.SoccerTeam.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -22,4 +26,6 @@
     <style name="Theme.SoccerTeam.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.SoccerTeam.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

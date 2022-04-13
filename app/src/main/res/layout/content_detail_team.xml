@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="20dp"
-    android:background="@color/gray"
+    android:theme="@style/AppThemeGray"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ImageView
@@ -149,6 +149,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:src="@drawable/badge"
+                android:background="@color/white"
                 android:contentDescription="@string/badge" />
 
             <TextView
@@ -156,6 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/badge"
+                android:background="@color/white"
                 android:padding="5dp"
                 android:textAlignment="center" />
         </LinearLayout>
@@ -175,6 +177,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:src="@drawable/jersey"
+                android:background="@color/white"
                 android:contentDescription="@string/jersey" />
 
             <TextView
@@ -183,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/jersey"
                 android:padding="5dp"
+                android:background="@color/white"
                 android:textAlignment="center" />
         </LinearLayout>
 
