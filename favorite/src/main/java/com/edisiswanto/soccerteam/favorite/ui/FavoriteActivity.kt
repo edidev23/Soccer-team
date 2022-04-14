@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.edisiswanto.core.ui.TeamAdapter
+import com.edisiswanto.soccerteam.favorite.R
 import com.edisiswanto.soccerteam.favorite.databinding.ActivityFavoriteBinding
 import com.edisiswanto.soccerteam.favorite.di.favoriteModules
 import com.edisiswanto.soccerteam.ui.detailPage.DetailTeamActivity
@@ -22,7 +23,7 @@ class FavoriteActivity : AppCompatActivity() {
         binding = ActivityFavoriteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupToolbarTitle("Favorite Page")
+        setupToolbarTitle(getString(R.string.title_favorite))
 
         loadKoinModules(favoriteModules)
 

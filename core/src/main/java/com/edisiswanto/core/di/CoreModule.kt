@@ -8,6 +8,9 @@ import com.edisiswanto.core.data.source.remote.RemoteDataSource
 import com.edisiswanto.core.data.source.remote.network.ApiService
 import com.edisiswanto.core.domain.repository.ITeamRepository
 import com.edisiswanto.core.utils.AppExecutors
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
+import okhttp3.CertificatePinner
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
@@ -19,19 +22,28 @@ import java.util.concurrent.TimeUnit
 val databaseModule = module {
     factory { get<TeamDatabase>().teamDao() }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("edisiswanto".toCharArray())
+        val factory = SupportFactory(passphrase)
         Room.databaseBuilder(
             androidContext(),
             TeamDatabase::class.java, "Soccer.db"
-        ).fallbackToDestructiveMigration().build()
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
 val networkModule = module {
     single {
+        val hostname = "sni.cloudflaressl.com"
+        val certificatePinner = CertificatePinner.Builder()
+            .add(hostname, "sha256/Yl6IYMBnxrwtn9DWo32vSutvY3gRn56iEfWj5/66c88=")
+            .build()
         OkHttpClient.Builder()
             .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
             .connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)
+            .certificatePinner(certificatePinner)
             .build()
     }
     single {
