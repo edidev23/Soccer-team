@@ -77,19 +77,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu1 -> {
-                var intent: Intent? = null
-                try {
-                    intent = Intent(
-                        this,
-                        Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")
-                    )
-                    startActivity(intent)
-                } catch (e: ClassNotFoundException) {
-                    e.printStackTrace()
-                }
+                startActivity(Intent(this, Class.forName("com.edisiswanto.soccerteam.favorite.ui.FavoriteActivity")))
                 true
             }
             else -> true
         }
+    }
+
+    override fun onBackPressed() {
+        finishAfterTransition()
     }
 }

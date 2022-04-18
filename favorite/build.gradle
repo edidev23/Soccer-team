@@ -28,11 +28,11 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles 'proguard-rules.pro'
+            proguardFiles 'consumer-rules.pro'
         }
         debug {
             minifyEnabled false
-            proguardFiles 'proguard-rules.pro'
+            proguardFiles 'consumer-rules.pro'
         }
     }
 
@@ -44,7 +44,6 @@ android {
 dependencies {
     implementation project(":core")
     implementation project(":app")
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
     testImplementation 'junit:junit:4.13.2'
 }

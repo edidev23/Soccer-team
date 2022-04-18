@@ -81,10 +81,6 @@ public *;
 -keep class net.sqlcipher.** { *; }
 -dontwarn net.sqlcipher.**
 
--keep public class ** {
- *;
-}
-
 # Uncomment for DexGuard only
 #-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 

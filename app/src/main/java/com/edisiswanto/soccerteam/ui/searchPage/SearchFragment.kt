@@ -63,6 +63,7 @@ class SearchFragment : Fragment() {
                     binding.viewError.tvError.text = getString(R.string.nothing)
                     teamAdapter.setData(emptyList())
                 } else {
+                    binding.viewError.root.visibility = View.INVISIBLE
                     teamAdapter.setData(teamsItem)
                 }
             })

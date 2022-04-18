@@ -14,7 +14,6 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 
 class FavoriteActivity : AppCompatActivity() {
-
     private val favoriteViewModel: FavoriteViewModel by viewModel()
     private lateinit var binding: ActivityFavoriteBinding
 
@@ -52,7 +51,7 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        finish()
+        onBackPressed()
         return super.onSupportNavigateUp()
     }
 }

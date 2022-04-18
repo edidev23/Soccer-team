@@ -69,6 +69,11 @@ class DetailTeamActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     companion object {
         const val EXTRA_DATA = "extra_data"
     }

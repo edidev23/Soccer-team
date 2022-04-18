@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.edisiswanto.soccerteam
 
 import android.app.Application
